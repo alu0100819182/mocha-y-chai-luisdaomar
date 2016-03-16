@@ -25,6 +25,10 @@ Para instalar las dependencias:
 * Enlaces del la página extendida:
   <http://alu0100819182.github.io/mocha-y-chai-luisdaomar>
 
+* Enlace del repo de la practica:
+  <https://github.com/alu0100819182/mocha-y-chai-luisdaomar/tree/gh-pages>
+
+
 * Enlace del repositorio de la comunidad:
   <https://github.com/ULL-ESIT-GRADOII-PL/mocha-y-chai-luisdaomar>
 
