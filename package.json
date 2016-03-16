@@ -2,7 +2,7 @@
   "name": "mocha-chai-sinon",
   "version": "0.0.0",
   "description": "See the tutorial at: https://nicolas.perriault.net/code/2013/testing-frontend-javascript-code-using-mocha-chai-and-sinon/",
-  "main": "cow.js",
+  "main": "js/conversordos.js",
   "scripts": {
     "test": "open test.html",
     "chai": "curl https://raw.githubusercontent.com/chaijs/chai/master/chai.js -o vendor/chai.js",
