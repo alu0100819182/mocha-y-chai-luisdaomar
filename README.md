@@ -18,8 +18,9 @@ Para instalar las dependencias:
 
 * En la practica se realizó lo siguiente:
 
-** Realización de prueba en mocha y chai
-** Comprobación de cubrimiento de código mediante blanket
+* Realización de prueba en mocha y chai
+* Comprobación de cubrimiento de código mediante blanket
+* Utilización de gulp
 
 * Enlaces del la página extendida:
   <http://alu0100819182.github.io/mocha-y-chai-luisdaomar>
