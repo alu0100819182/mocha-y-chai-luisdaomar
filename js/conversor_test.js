@@ -34,5 +34,17 @@ describe("Conversor", function() {
       var source = new Celsius(32);
       expect(source.toKelvin()).to.equal(305.15);
     });
+    it("Creacion de un objeto Kelvin", function() {
+      var source = new Kelvin(32);
+      expect(source.valor).to.equal(32);
+    });
+    it("Prueba de Kelvin a Farenheit", function() {
+      var source = new Kelvin(32);
+      expect(source.toFarenheit()).to.equal(-241.14999999999998);
+    });
+    it("Prueba de Kelvin a Celsius", function() {
+      var source = new Kelvin(32);
+      expect(source.toCelsius()).to.equal(-402.07);
+    });
   });
 });
