@@ -1,0 +1,30 @@
+{
+  "name": "mocha-chai-sinon",
+  "version": "0.0.0",
+  "description": "See the tutorial at: https://nicolas.perriault.net/code/2013/testing-frontend-javascript-code-using-mocha-chai-and-sinon/",
+  "main": "cow.js",
+  "scripts": {
+    "test": "open test.html",
+    "chai": "curl https://raw.githubusercontent.com/chaijs/chai/master/chai.js -o vendor/chai.js",
+    "sinon": "curl http://sinonjs.org/releases/sinon-1.12.2.js -o vendor/sinon-1.12.2.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/crguezl/mocha-chai-sinon--example.git"
+  },
+  "devDependencies" : {
+  },
+  "keywords": [
+    "mocha",
+    "chai",
+    "sinon",
+    "testing",
+    "javascript"
+  ],
+  "author": "Casiano",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/crguezl/mocha-chai-sinon--example/issues"
+  },
+  "homepage": "https://github.com/crguezl/mocha-chai-sinon--example"
+}
