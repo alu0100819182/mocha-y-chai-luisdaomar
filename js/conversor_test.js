@@ -5,9 +5,9 @@ describe("Conversor", function() {
     it("Cambio de f a c", function() {
       expect(Medida.convertir("32f to c")).to.equal("0.00 Celsius");
     });
-    it("Prueba Matching", function() {
-      expect(Medida.match("32f to c")).to.equal("0");
-    });
+  //  it("Prueba Matching", function() {
+    //  expect(Medida.match("32f to c")).to.equal("0");
+    //});
   });
   describe("Temperatura", function() {
     it("Creacion de un objeto Farenheit", function() {
