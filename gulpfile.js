@@ -1,23 +1,28 @@
-var gulp    = require('gulp'),
-    gutil   = require('gulp-util'),
-    uglify  = require('gulp-uglify'),
-    concat  = require('gulp-concat');
+var gulp = require('gulp');
+var htmlmin = require('gulp-htmlmin');
+var cleanCSS = require('gulp-clean-css');
+var minify = require('gulp-minify');
 var del     = require('del');
-var minifyHTML = require('gulp-minify-html');
-var minifyCSS  = require('gulp-minify-css');
 
-gulp.task('minify', function () {
-  gulp.src('js/*.js')
-  .pipe(uglify())
-  .pipe(gulp.dest('minified'));
+gulp.task('minify', function() {
+  return gulp.src('index.html')
+    .pipe(htmlmin({collapseWhitespace: true}))
+    .pipe(gulp.dest('dist'))
+});
 
-  gulp.src('index.html')
-    .pipe(minifyHTML())
-    .pipe(gulp.dest('./minified/'))
+gulp.task('minify-css', function() {
+  return gulp.src('vendor/mocha.css')
+    .pipe(cleanCSS({compatibility: 'ie8'}))
+    .pipe(gulp.dest('dist'));
+})
 
-  gulp.src('vendor/mocha.css')
-   .pipe(minifyCSS({keepBreaks:true}))
-   .pipe(gulp.dest('./minified/'))
+gulp.task('compress', function() {
+  gulp.src('lib/*.js')
+    .pipe(minify({
+        exclude: ['tasks'],
+        ignoreFiles: ['.combo.js', '-min.js']
+    }))
+    .pipe(gulp.dest('dist'))
 });
 
 gulp.task('clean', function(cb) {
